@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: #E5E5E5;
+}
+
+#root {
+    width: 550px;
+    height: 868px;
+    margin: 10px auto;
+    padding: 44px 0;
+    background-color: #23252C;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    position: relative;
+    width: 317px;
+    border-radius: 7px;
+    background-color: #1A1B21;
+}
+
+.info__photo {
+    width: 317px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.info__title {
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin: 21px 0 7px 0;
+}
+
+.info__developer {
+    font-size: 13px;
+    color: #F3BF99;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.info__website {
+    color: #E5E5E5;
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.info-wrapper {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 35px;
+}
+
+.info__send-mail {
+    display: block;
+    padding: 9px 0;
+    text-decoration: none;
+    background-color: #E5E5E5;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #374151;
+    border: 1px solid gray;
+    transition: background-color 0.5s;
+}
+
+.info__send-mail:hover {
+    background-color: #F3BF99;
+}
+
+.info__send-mail>img {
+    margin-right: 8px;
+}
+
+.about {
+    font-family: Arial;
+    margin-top: 30px;
+    padding: 0 35px;
+    color: #DCDCDC;
+}
+
+.about__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.about__text {
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.social {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: #161619;
+    border-radius: 0 0 7px 7px;
 }

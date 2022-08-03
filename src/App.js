@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Article } from "./components/Article";
+import { Info } from "./components/Info";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Info />
+      <Article
+        title="About"
+        text="I rarely find the time to write, and when I do it’s often a struggle for me. So treat these projects as if they appeared by miracle."
+      />
+      <Article
+        title="Interests"
+        text="I like photos, playing guitar. Drink bear with my friends. Running."
+      />
+      <Footer />
     </div>
   );
 }
